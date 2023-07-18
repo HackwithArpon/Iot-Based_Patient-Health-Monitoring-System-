@@ -244,4 +244,5 @@ Conference on Vision Towards Emerging Trends in Communication and Networking
 Monitoring System using IoT using Arduino Uno Microcontroller.” Health 6.08 (2019).**
 
 
-By **Arpon Kumar Choedhury**, KGEC_CSE'25
+
+By **Arpon Kumar Chowdhury**, KGEC_CSE'25
