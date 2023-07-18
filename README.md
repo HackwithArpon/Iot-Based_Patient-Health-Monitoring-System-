@@ -13,6 +13,7 @@ chart. The circuit output values in the LED represent the current heartbeat, tim
 heartbeat per minute and body temperature.
 
 **Objectives:**
+
 ● To design a portable health monitoring system, which measures the patient’s body
 temperature and pulse rate.
 ● To provide medical assistance according to the data received from the sensors which
