@@ -17,6 +17,7 @@ heartbeat per minute and body temperature.
 
 ● To design a portable health monitoring system, which measures the patient’s body
 temperature and pulse rate.
+
 ● To provide medical assistance according to the data received from the sensors which
 stored in cloud server (ThingSpeak).
 
@@ -25,15 +26,23 @@ stored in cloud server (ThingSpeak).
 Hardware Requirements-
 
 ● Arduino Uno
+
 ● ESP8266 Wi-Fi Module
+
 ● LM35 Temperature Sensor
+
 ● Pulse Sensor
+
 ● 16*2 LCD Display
+
 ● Potentiometer (10K)
+
 ● Resistor (1K & 2K)
+
 ● Breadboard
 
 Software Requirements-
 
 ● Arduino Compiler
+
 ● ThingSpeak (Cloud Service)
