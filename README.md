@@ -1,5 +1,6 @@
 # Iot-Based_Patient-Health-Monitoring-System-
 **Introduction:**
+
 IoT is rapidly revolutionising the Healthcare Industry. In this project, I have designed the IoT
 Based Patient Health Monitoring System using **ESP8266 & Arduino**. The IoT platform used
 in this project is **ThingSpeak**. This IoT device could read the pulse rate and surrounding
@@ -13,13 +14,16 @@ chart. The circuit output values in the LED represent the current heartbeat, tim
 heartbeat per minute and body temperature.
 
 **Objectives:**
+
 ● To design a portable health monitoring system, which measures the patient’s body
 temperature and pulse rate.
 ● To provide medical assistance according to the data received from the sensors which
 stored in cloud server (ThingSpeak).
 
 **Requirements:**
-Hardware Requirements:
+
+Hardware Requirements-
+
 ● Arduino Uno
 ● ESP8266 Wi-Fi Module
 ● LM35 Temperature Sensor
@@ -28,6 +32,8 @@ Hardware Requirements:
 ● Potentiometer (10K)
 ● Resistor (1K & 2K)
 ● Breadboard
-Software Requirements:
+
+Software Requirements-
+
 ● Arduino Compiler
 ● ThingSpeak (Cloud Service)
