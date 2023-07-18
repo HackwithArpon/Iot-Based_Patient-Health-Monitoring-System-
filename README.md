@@ -21,6 +21,16 @@ temperature and pulse rate.
 ● To provide medical assistance according to the data received from the sensors which
 stored in cloud server (ThingSpeak).
 
+**Block Diagram:**
+![Block Diagram](https://github.com/HackwithArpon/Iot-Based_Patient-Health-Monitoring-System-/assets/116937463/07e15f60-6c7c-4983-8915-264cb5167680)
+This is a simple block diagram that explains the IoT Based Patient Health Monitoring System
+using ESP8266 & Arduino. Pulse sensor and LM35 temperature sensor measure BPM &
+Environmental temperature respectively. The Arduino processes the code and displays it to
+16*2 LCD Display. ESP8266 Wi-Fi module connects to Wi-Fi and sends the data to IoT
+device server. The IoT server used here is ThingSpeak. Finally, the data can be monitored
+from any part of the World by logging into the ThingSpeak channel.
+
+
 **Requirements:**
 
 Hardware Requirements-
