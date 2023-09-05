@@ -1,6 +1,24 @@
 # Iot-Based_Patient-Health-Monitoring-System 
 **ABSTRACT:**
 
+Nowadays Health-care Environment has developed science and knowledge based on 
+Wireless-Sensing node Technology oriented. Patients are facing a problematic 
+situation of unforeseen demise due to the specific reason of heart problems and attack 
+which is because of nonexistence of good medical maintenance to patients at the 
+needed time. This is for specially monitoring the old age patients and informing 
+doctors and loved ones. So, we are proposing an innovative project to dodge such 
+sudden death rates by using Patient Health Monitoring that uses sensor technology and 
+uses internet to communicate to the loved ones in case of problems. This system uses 
+Temperature and heartbeat sensor for tracking patient’s health. Both the sensors are 
+connected to the Arduino-uno. To track the patient health micro-controller is in turn 
+interfaced to an LCD display and wi-fi connection to send the data to the web-server 
+(wireless sensing node). In case of any abrupt changes in patient heart-rate or body 
+temperature alert is sent about the patient using IoT. This system also shows patients 
+temperature and heartbeat tracked live data with timestamps over the Internetwork. 
+Thus, Patient health monitoring system based on IoT uses internet to effectively 
+monitor patient health and helps the user monitoring their loved one’s drome work and 
+saves lives.
+
 **Introduction:**
 
 IoT is rapidly revolutionising the Healthcare Industry. In this project, I have designed the IoT
