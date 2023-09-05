@@ -35,6 +35,21 @@ Smart systems and IoT are driven by combination of three things:
 • Connectivity
 • People & Processes
 
+With tons of new healthcare technology start-ups, IoT is rapidly revolutionizing the 
+healthcare industry. In this project, we have designed the IoT Based Patient Health
+Monitoring System using ESP8266 & Arduino. The IoT platform used in this project is 
+ThingSpeak. ThingSpeak is an open-source Internet of Things (IoT) application and API to 
+store and retrieve data from things using the HTTP protocol over the Internet or via a Local 
+Area Network. This IoT device could read the pulse rate and surrounding
+temperature and update them to an IoT platform.
+This Health Monitoring System simulates two major aspects of health and wellbeing :
+**i) Human Body Temperature, ii) Heart Beat Rate.**
+It presents the numerical value of these two aspects and maintains a data logger system
+where the patient’s data can be stored and received for medical history and check-up
+purpose collectively. Along with that the output values can be viewed through waveform
+chart. The circuit output values in the LED represent the current heartbeat, time in second,
+heartbeat per minute and body temperature.
+
 **Objectives:**
 
 ● To design a portable health monitoring system, which measures the patient’s body
@@ -79,54 +94,65 @@ Software Requirements-
 
 ● ThingSpeak (Cloud Service)
 
-**Arduino Uno :**
+**1. Arduino Uno :**
 
-Arduino UNO is based on an **ATmega328P** microcontroller. The Arduino UNO includes 6
-analog pin inputs, 14 digital pins, a USB connector, a power jack, and an ICSP (In-Circuit
-Serial Programming) header. It is programmed based on IDE, which stands for Integrated
-Development Environment. It can run on both online and offline platforms.
+Arduino is an open-source prototyping platform based on easy-to-use hardware and software. 
+Arduino boards are able to read inputs - light on a sensor, a finger on a button, or a Twitter 
+message - and turn it into an output - activating a motor, turning on an LED, publishing 
+something online. One can tell the board what to do by sending a set of instructions to the 
+microcontroller on the board. To do so we use the Arduino programming language (based on 
+Wiring) , and the Arduino Software (IDE), based on Processing.
+Over the years Arduino has been the brain of thousands of projects, from everyday objects to 
+complex scientific instruments. A worldwide community of makers - students, hobbyists, 
+artists, programmers, and professionals - has gathered around this open-source platform, their 
+contributions have added up to an incredible amount of accessible knowledge that can be of 
+great help to novices and experts alike. Arduino was born at the Ivrea Interaction Design 
+Institute as an easy tool for fast prototyping, aimed at students without a background in 
+electronics and programming. As soon as it reached a wider community, the Arduino board 
+started changing to adapt to new needs and challenges, differentiating its offer from simple 
+8-bit boards to products for IoT applications, wearable, 3D printing, and embedded 
+environments. All Arduino boards are completely open-source, empowering users to build 
+them independently and eventually adapt them to their particular needs. The software, too, is 
+open-source, and it is growing through the contributions of users worldwide.
+Arduino also simplifies the process of working with microcontrollers, but it offers some 
+advantage for teachers, students, and interested amateurs over other systems:
 
-The components of Arduino UNO board are shown below:
+**Inexpensive -** Arduino boards are relatively inexpensive compared to other microcontroller 
+platforms. The least expensive version of the Arduino module can be assembled by hand, and 
+even the pre-assembled Arduino modules cost less than $50
 
-● **ATmega328 Microcontroller :** It is a single chip Microcontroller of the ATmel family.
-The processor code inside it is 8-bit. It combines Memory (SRAM, EEPROM, and
-Flash), Analog to Digital Converter, SPI serial ports, I/O lines, registers, timer,
-external and internal interrupts, and oscillator.
+**Cross-platform -** The Arduino Software (IDE) runs on Windows, Macintosh OSX, 
+and Linux operating systems. Most microcontroller systems are limited to Windows.
 
-● **ICSP pin :** The In-Circuit Serial Programming pin allows the user to program using the
-firmware of the Arduino board.
+**Simple, clear programming environment -** The Arduino Software (IDE) is easy-to-use for
+beginners, yet flexible enough for advanced users to take advantage of as well. For teachers, 
+it's conveniently based on the Processing programming environment, so students learning to 
+program in that environment will be familiar with how the Arduino IDE works.
 
-● **Power LED Indicator :** The ON status of LED shows the power is activated. When the
-power is OFF, the LED will not light up.
+**Open source and extensible software -** The Arduino software is published as open-source 
+tools, available for extension by experienced programmers. The language can be expanded 
+through C++ libraries, and people wanting to understand the technical details can make the 
+leap from Arduino to the AVR C programming language on which it's based. Similarly, one 
+can add AVR-C code directly into the Arduino programs.
 
-● **Digital I/O pins :** The digital pins have the value HIGH or LOW. The pins numbered
-from D0 to D13 are digital pins.
+**Open source and extensible hardware -** The plans of the Arduino boards are published 
+under a Creative Commons license, so experienced circuit designers can make their own 
+version of the module, extending it and improving it. Even relatively inexperienced users can 
+build the breadboard version of the module in order to understand how it works and save 
+money. Arduino is an open-source electronics prototyping platform based on flexible, easyto-use hardware and software. It’s intended for artists, designers, hobbyists, and anyone 
+interested in creating interactive objects or environments.
 
-● **TX and RX LED's :** The successful flow of data is represented by the lighting of these
-LED's.
+**Features of Arduino Uno :**
 
-● **AREF :** The Analog Reference (AREF) pin is used to feed a reference voltage to the
-Arduino UNO board from the external power supply.
+Processor: ATmega328 (16 MHz)
+Flash memory: 32 KB
+RAM: 2kb
+Operating Voltage: 5V
+Input Voltage: 7-12 V
+Number of analog inputs: 6
+Number of digital I/O: 14 (6 of them pwn)
 
-● **Reset button :** It is used to add a Reset button to the connection.
-
-● **USB :** It allows the board to connect to the computer. It is essential for the
-programming of the Arduino UNO board.
-
-● **Crystal Oscillator :** The Crystal oscillator has a frequency of 16MHz, which makes the
-Arduino UNO a powerful board.
-
-● **Voltage Regulator :** The voltage regulator converts the input voltage to 5V.
-
-● **GND :** Ground pins. The ground pin acts as a pin with zero voltage.
-
-● **Vin :** It is the input voltage.
-
-● **Analog Pins :** The pins numbered from A0 to A5 are analog pins. The function of
-Analog pins is to read the analog sensor used in the connection. It can also act as
-GPIO (General Purpose Input Output) pins.
-
-**ESP8266 :**
+**2. ESP8266 Wi-Fi Module :**
 
 The ESP8266 is a very user-friendly and low-cost device to provide internet connectivity to
 our projects. The module can work both as an Access point (can create hotspot) and as a
@@ -157,7 +183,24 @@ Here is its pins description:
 
 **Pin 8: Vcc:** Connect to +3.3V only
 
-**LM35 Temperature Sensor :**
+**Features of ESP8266 :**
+
+• CPU (32 bit, 26MHz-52MHz, 64KB instruction RAM, 64KB boot ROM, 
+96KB data
+• RAM), CPU clock speed can reach maximum value of 160 MHz
+• 802.11 b/g/n protocol.
+• Wi-Fi Direct (P2P), soft-AP.
+• Integrated TCP/IP protocol stack.
+• It requires 3.3V power–do not power it with 5 volts.
+• Wake up and transmit packets in < 2ms.
+• Standby power consumption of < 1.0Mw.
+• Integrated low power 32-bit CPU could be used as application processor.
+• GPIO, UART, ADC, I2C, SPI, PWM.
+• Real Time Operation System (RTOS) is enabled. Currently, only 20% of 
+MIPS has been occupied by the Wi-Fi stack, the rest can all be used for 
+user application programming and development.
+
+**3. LM35 Temperature Sensor :**
 
 The LM35 series are precision integrated-circuit temperature devices with an output voltage
 linearly-proportional to the Centigrade temperature. The LM35 device has an advantage over
@@ -166,7 +209,7 @@ constant voltage from the output to obtain convenient Centigrade scaling. The LM
 does not require any external calibration or trimming to provide typical accuracies of ±¼°C at
 room temperature and ±¾°C over a full −55°C to 150°C temperature range.
 
-**Pulse Sensor :**
+**4. Pulse Sensor :**
 
 The Pulse Sensor is a plug-and-play heart-rate sensor for Arduino. It can be used by
 students, artists, athletes, makers, and game & mobile developers who want to easily
@@ -182,7 +225,7 @@ demo code that makes it easy to use.
 
 **● Pin-3(Signal) :** Purple Colour Wire - It is connected to the pulsating o/p signal.
 
-**16*2 LCD Display :**
+**5. 16*2 LCD Display :**
 
 The features of this LCD mainly :
 
@@ -202,7 +245,7 @@ The features of this LCD mainly :
 
 ● It displays a few custom generated characters
 
-**ThingSpeak :**
+**6. ThingSpeak :**
 
 ThingSpeak allows you to aggregate, visualize and analyze live data streams in the cloud.
 Some of the key capabilities of ThingSpeak include the ability to:
@@ -232,7 +275,7 @@ topics below:
 
 **Act:** Trigger a reaction
 
-**Circuit Connections :**
+**Circuit Diagram & Connections :**
 
 **1.** Connect Pulse Sensor output pin to A0 of Arduino and other two pins to VCC and GND.
 **2.** Connect LM35 Temperature Sensor output pin to A1 of Arduino and other two pins to VCC
@@ -246,6 +289,19 @@ we will connect it directly to the Arduino. So, we will have to make a voltage d
 which will convert the 5V into 3.3V. This can be done by connecting the 2.2K & 1K resistor.
 Thus the RX pin of the ESP8266 is connected to pin 10 of Arduino through the resistors.
 **8.** Connect the TX pin of the ESP8266 to pin 9 of the Arduino.
+
+
+![Final Project Image](https://github.com/HackwithArpon/Iot-Based_Patient-Health-Monitoring-System-/assets/116937463/f162c68a-6d3b-4c76-8c35-0778372fda1c)
+
+**Setting the ThingSpeak**
+
+ThingSpeak provides a very good tool for IoT based projects. By using the 
+ThingSpeak site, we can monitor our data and control our system over the Internet, 
+using the Channels and web pages provided by ThingSpeak.
+Then create a new channel and set up what you want. Then create the API keys. This 
+key is required for programming modifications and setting your data. Then upload the 
+code to the Arduino UNO by assembling the circuit shown above. Open the serial 
+monitor and it will automatically connect to Wi-Fi and set up everything.
 
 **Conclusion:**
 
