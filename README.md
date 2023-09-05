@@ -12,7 +12,7 @@ uses internet to communicate to the loved ones in case of problems. This system 
 **Temperature and heartbeat sensor** for tracking patient’s health. Both the sensors are 
 connected to the **Arduino-uno**. To track the patient health micro-controller is in turn 
 interfaced to an LCD display and wi-fi connection to send the data to the web-server 
-(wireless sensing node). In case of any abrupt changes in **patient** **heart-rate or body 
+(wireless sensing node). In case of any abrupt changes in patient **heart-rate or body 
 temperature alert is sent about the patient using IoT**. This system also shows patients 
 temperature and heartbeat tracked live data with timestamps over the Internetwork. 
 Thus, Patient health monitoring system based on IoT uses internet to effectively 
@@ -21,17 +21,14 @@ saves lives.
 
 **Introduction:**
 
-IoT is rapidly revolutionising the Healthcare Industry. In this project, I have designed the IoT
-Based Patient Health Monitoring System using **ESP8266 & Arduino**. The IoT platform used
-in this project is **ThingSpeak**. This IoT device could read the pulse rate and surrounding
-temperature and update them to an IoT platform.
-This Health Monitoring System simulates two major aspects of health and wellbeing :
-**i) Human Body Temperature, ii) Heart Beat Rate.**
-It presents the numerical value of these two aspects and maintains a data logger system
-where the patient’s data can be stored and received for medical history and check-up
-purpose collectively. Along with that the output values can be viewed through waveform
-chart. The circuit output values in the LED represent the current heartbeat, time in second,
-heartbeat per minute and body temperature.
+Internet of Things (IoT) conceptualizes the idea of remotely connecting and 
+monitoring real world objects (things) through the Internet.
+
+**“The Internet of Things is the network of physical objects that contain embedded 
+technology to communicate and sense or interact with their internal states or the 
+external environment.” – Gartner**
+
+![IoT General Performance Structure](https://github.com/HackwithArpon/Iot-Based_Patient-Health-Monitoring-System-/assets/116937463/95f6defa-71c2-4cac-8226-f2e1ff8aab1e)
 
 **Objectives:**
 
