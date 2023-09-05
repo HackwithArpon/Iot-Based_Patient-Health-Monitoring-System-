@@ -30,6 +30,11 @@ external environment.” – Gartner**
 
 ![IoT General Performance Structure](https://github.com/HackwithArpon/Iot-Based_Patient-Health-Monitoring-System-/assets/116937463/95f6defa-71c2-4cac-8226-f2e1ff8aab1e)
 
+Smart systems and IoT are driven by combination of three things:
+• Sensors & Actuators
+• Connectivity
+• People & Processes
+
 **Objectives:**
 
 ● To design a portable health monitoring system, which measures the patient’s body
