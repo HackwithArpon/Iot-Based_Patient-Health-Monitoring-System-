@@ -12,7 +12,7 @@ uses internet to communicate to the loved ones in case of problems. This system 
 **Temperature and heartbeat sensor** for tracking patient’s health. Both the sensors are 
 connected to the **Arduino-uno**. To track the patient health micro-controller is in turn 
 interfaced to an LCD display and wi-fi connection to send the data to the web-server 
-(wireless sensing node). In case of any abrupt changes in patient **heart-rate or body 
+(wireless sensing node). In case of any abrupt changes in **patient** **heart-rate or body 
 temperature alert is sent about the patient using IoT**. This system also shows patients 
 temperature and heartbeat tracked live data with timestamps over the Internetwork. 
 Thus, Patient health monitoring system based on IoT uses internet to effectively 
