@@ -145,13 +145,13 @@ interested in creating interactive objects or environments.
 
 **Features of Arduino Uno :**
 
-Processor: ATmega328 (16 MHz)
-Flash memory: 32 KB
-RAM: 2kb
-Operating Voltage: 5V
-Input Voltage: 7-12 V
-Number of analog inputs: 6
-Number of digital I/O: 14 (6 of them pwn)
+**Processor:** ATmega328 (16 MHz)
+**Flash memory:** 32 KB
+**RAM:** 2kb
+**Operating Voltage:** 5V
+**Input Voltage:** 7-12 V
+**Number of analog inputs:** 6
+**Number of digital I/O:** 14 (6 of them pwn)
 
 **2. ESP8266 Wi-Fi Module :**
 
